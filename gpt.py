@@ -9,14 +9,14 @@ while True:
         print("Goodbye!")
         break
 
-    # Add user message to conversation
+ 
     conversation.append({"role": "user", "content": user_input})
 
-    # Get GPT-3.5-turbo response
+   
     response_text = chat_with_gpt3(conversation)
 
-    # Add GPT-3.5-turbo response to conversation
+
     conversation.append({"role": "assistant", "content": response_text})
 
-    # Print assistant's response
+
     print("Assistant:", response_text)
